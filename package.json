@@ -1,0 +1,7 @@
+{
+  "devDependencies": {
+    "autoprefixer": "^9.7.6",
+    "dart-sass": "^1.25.0",
+    "rimraf": "^3.0.2"
+  }
+}
