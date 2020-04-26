@@ -1,4 +1,39 @@
 {
+  "name": "jack-skeleton",
+  "version": "dev",
+  "homepage": "https://github.com/ajm113/jack-skeleton",
+  "author": {
+    "name": "Andrew McRobb"
+  },
+  "description": "Modernized fork of Skeleton using flexbox and latest CSS practices w/ new components!",
+  "main": "jack.scss",
+  "unpkg": "css/jack-skeleton.css",
+  "style": "jack-skeleton/css/jack-skeleton.min.css",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ajm113/jack-skeleton.git"
+  },
+  "license": "MIT",
+  "keywords": [
+    "skeleton",
+    "css",
+    "scss",
+    "flexbox",
+    "responsive",
+    "framework"
+  ],
+  "bugs": {
+    "url": "https://github.com/ajm113/jack-skeleton/issues"
+  },
+  "scripts": {
+    "build": "npm run build-clean && npm run build-sass && npm run build-autoprefix && npm run build-cleancss",
+    "build-autoprefix": "postcss --use autoprefixer --map false --output css/jack-skeleton.css css/jack-skeleton.css",
+    "build-clean": "rimraf css",
+    "build-cleancss": "cleancss -o css/jack-skeleton.min.css css/jack-skeleton.css",
+    "build-scss": "dart-sass --output-style expanded --source-map true jack.scss css/jack-skeleton.css",
+    "deploy": "npm run build",
+    "start": "npm run build-sass -- --watch"
+  },
   "devDependencies": {
     "autoprefixer": "^9.7.6",
     "dart-sass": "^1.25.0",
