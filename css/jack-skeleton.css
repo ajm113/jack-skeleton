@@ -408,4 +408,126 @@ body {
   }
 }
 
+.columns,
+.column {
+  display: block;
+  flex-basis: 0;
+  flex-grow: 1;
+}
+@media (min-width: 550px), print {
+  .columns,
+.column {
+    margin-left: 4%;
+  }
+  .columns:first-child,
+.column:first-child {
+    margin-left: 0;
+  }
+}
+.columns.one,
+.column.one {
+  width: 4.6666666667%;
+}
+.columns.offset-by-one,
+.column.offset-by-one {
+  margin-left: 8.6666666667%;
+}
+.columns.offset-by-two,
+.column.offset-by-two {
+  margin-left: 17.3333333333%;
+}
+.columns.offset-by-three,
+.column.offset-by-three {
+  margin-left: 26%;
+}
+.columns.offset-by-four,
+.column.offset-by-four {
+  margin-left: 34.6666666667%;
+}
+.columns.offset-by-five,
+.column.offset-by-five {
+  margin-left: 43.3333333333%;
+}
+.columns.offset-by-six,
+.column.offset-by-six {
+  margin-left: 52%;
+}
+.columns.offset-by-seven,
+.column.offset-by-seven {
+  margin-left: 60.6666666667%;
+}
+.columns.offset-by-eight,
+.column.offset-by-eight {
+  margin-left: 69.3333333333%;
+}
+.columns.offset-by-nine,
+.column.offset-by-nine {
+  margin-left: 78%;
+}
+.columns.offset-by-ten,
+.column.offset-by-ten {
+  margin-left: 86.6666666667%;
+}
+.columns.offset-by-eleven,
+.column.offset-by-eleven {
+  margin-left: 95.3333333333%;
+}
+.columns.offset-by-one-third,
+.column.offset-by-one-third {
+  margin-left: 34.6666666667%;
+}
+.columns.offset-by-two-thirds,
+.column.offset-by-two-thirds {
+  margin-left: 69.3333333333%;
+}
+.columns.offset-by-one-half,
+.column.offset-by-one-half {
+  margin-left: 52%;
+}
+
+.columns.two {
+  width: 13.3333333333%;
+}
+.columns.three {
+  width: 22%;
+}
+.columns.four {
+  width: 30.6666666667%;
+}
+.columns.five {
+  width: 39.3333333333%;
+}
+.columns.six {
+  width: 48%;
+}
+.columns.seven {
+  width: 56.6666666667%;
+}
+.columns.eight {
+  width: 65.3333333333%;
+}
+.columns.nine {
+  width: 74%;
+}
+.columns.ten {
+  width: 82.6666666667%;
+}
+.columns.eleven {
+  width: 91.3333333333%;
+}
+.columns.twelve {
+  width: 100%;
+  margin-left: 0;
+}
+
+.column.one-third {
+  width: 30.6666666667%;
+}
+.column.two-thirds {
+  width: 65.3333333333%;
+}
+.column.one-half {
+  width: 48%;
+}
+
 /*# sourceMappingURL=jack-skeleton.css.map */
