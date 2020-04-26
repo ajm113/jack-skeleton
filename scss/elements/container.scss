@@ -1,0 +1,21 @@
+$container-padding: 0 20px !default;
+$container-mobile-width: 85% !default;
+$container-tablet-width: 80% !default;
+
+.container {
+  flex-grow: 1;
+  position: relative;
+  margin: 0 auto;
+  width: auto;
+  padding: $container-padding;
+  @include clearfix;
+
+  @include mobile {
+    max-width: $container-mobile-width;
+    padding: 0;
+  }
+
+  @include tablet {
+    max-width: $container-tablet-width;
+  }
+}

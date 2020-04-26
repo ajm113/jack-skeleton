@@ -1,6 +1,6 @@
 {
   "name": "jack-skeleton",
-  "version": "dev",
+  "version": "0.0.1",
   "homepage": "https://github.com/ajm113/jack-skeleton",
   "author": {
     "name": "Andrew McRobb"
@@ -26,17 +26,20 @@
     "url": "https://github.com/ajm113/jack-skeleton/issues"
   },
   "scripts": {
-    "build": "npm run build-clean && npm run build-sass && npm run build-autoprefix && npm run build-cleancss",
+    "build": "npm run build-clean && npm run build-scss && npm run build-autoprefix && npm run build-cleancss",
     "build-autoprefix": "postcss --use autoprefixer --map false --output css/jack-skeleton.css css/jack-skeleton.css",
     "build-clean": "rimraf css",
     "build-cleancss": "cleancss -o css/jack-skeleton.min.css css/jack-skeleton.css",
-    "build-scss": "dart-sass --output-style expanded --source-map true jack.scss css/jack-skeleton.css",
+    "build-scss": "dart-sass jack.scss css/jack-skeleton.css",
     "deploy": "npm run build",
     "start": "npm run build-sass -- --watch"
   },
   "devDependencies": {
     "autoprefixer": "^9.7.6",
+    "clean-css-cli": "^4.3.0",
     "dart-sass": "^1.25.0",
+    "postcss-cli": "^7.1.0",
     "rimraf": "^3.0.2"
-  }
+  },
+  "dependencies": {}
 }

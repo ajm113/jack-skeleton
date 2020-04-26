@@ -1,0 +1,27 @@
+$html-font-size: 62.5% !default;
+
+$body-font-size: 1.5em !default;
+$body-line-height: 1.6 !default;
+$body-family: $family-primary !default;
+$body-weight: 400 !default;
+$body-color: $text !default;
+$body-background-color: $white !default;
+$body-rendering: optimizeLegibility !default;
+
+html {
+  font-size: $html-font-size;
+}
+
+body {
+  background-color: $body-background-color;
+  font-size: $body-font-size;
+  line-height: $body-line-height;
+  font-weight: $body-weight;
+  color: $body-color;
+  font-family: $body-family;
+
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  text-size-adjust: 100%;
+  text-rendering: $body-rendering;
+}
