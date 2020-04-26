@@ -7,6 +7,11 @@ Loved the simplicity of [Skeleton](http://getskeleton.com) and it's use cases! B
 ## Getting Started
 *Coming Soon*
 
+## Special Thanks!
+
+I wanted to especially thank @dhg on GitHub for writing such a nice minimalistic CSS framework that wasn't trying to copy everyone else! Bulma, for project structure and inspiration! A lot of structures and methods
+were migrated over from Bulma to help develop and make it easier for developers to customize Jack Skeleton!
+
 ## License
 
 MIT
