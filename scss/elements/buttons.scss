@@ -1,0 +1,81 @@
+$button-height: 38px !default;
+$button-padding: 0 30px !default;
+$button-color: $grey !default;
+$button-font-size: 11px !default;
+$button-font-weight: 600 !default;
+$button-line-height: 38px !default;
+$button-text-transform: uppercase !default;
+$button-letter-spacing: .1rem !default;
+$button-background: transparent !default;
+$button-radius: $radius !default;
+$button-border: 1px solid #bbb !default;
+$button-bottom-spacing: $bottom-spacing-small !default;
+
+$button-hover-color: #888 !default;
+$button-hover-border-color: #333 !default;
+
+$button-primary-color: $white !default;
+$button-primary-background: $light-blue !default;
+$button-primary-border-color: $button-primary-background !default;
+
+$button-primary-hover-color: $button-primary-color !default;
+$button-primary-hover-background: $button-primary-background !default;
+$button-primary-hover-border-color: $button-primary-border-color !default;
+
+.button,
+button,
+input[type="submit"],
+input[type="reset"],
+input[type="button"] {
+  display: inline-block;
+  height: $button-height;
+  padding: $button-padding;
+  color: $button-color;
+  text-align: center;
+  font-size: $button-font-size;
+  font-weight: $button-font-weight;
+  line-height: $button-line-height;
+  text-transform: $button-text-transform;
+  letter-spacing: $button-letter-spacing;
+  text-decoration: none;
+  white-space: nowrap;
+  background: $button-background;
+  border-radius: $button-radius;
+  border: $button-border;
+  cursor: pointer;
+  box-sizing: border-box;
+
+  &:hover {
+    color: $button-hover-color;
+    border-color:  $button-hover-border-color;
+  }
+
+  &:focus {
+    outline: 0;
+    color: $button-color;
+    border: $button-border;
+  }
+
+  &.button-primary {
+    color: $button-primary-color;
+    background: $button-primary-background;
+    border-color: $button-primary-border-color;
+
+    &:focus {
+      color: $button-primary-color;
+      background: $button-primary-background;
+      border-color: $button-primary-border-color;
+    }
+
+    &:hover {
+      color: $button-primary-hover-color;
+      background: $button-primary-hover-background;
+      border-color: $button-primary-hover-border-color;
+    }
+  }
+}
+
+button,
+.button {
+  margin-bottom: $button-bottom-spacing;
+}

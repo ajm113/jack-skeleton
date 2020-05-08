@@ -1,0 +1,65 @@
+$form-bottom-spacing: $bottom-spacing-large !default;
+
+$form-input-height: 38px !default;
+$form-input-padding: 6px 10px !default;
+$form-input-background: $white !default;
+$form-input-border: 1px solid $light-grey !default;
+
+$form-input-focus-border: 1px solid $primary !default;
+
+form {
+  margin-bottom: $form-bottom-spacing;
+}
+
+@include input-control {
+  height: $form-input-height;
+  padding: $form-input-padding;
+  background: $form-input-background;
+  border: $form-input-border;
+  border-radius: $radius;
+  font-family: $body-family;
+  box-shadow: none;
+  appearance: none;
+
+  &:focus,
+  &:active {
+    outline: none;
+    border: $form-input-focus-border;
+  }
+}
+
+textarea {
+  min-height: 65px;
+  padding: 0 6px;
+  resize: vertical;
+}
+
+legend,
+label {
+  display: block;
+  margin-bottom: .5rem;
+  font-weight: 600;
+}
+
+fieldset {
+  padding: 0;
+  border-width: 0;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  display: inline;
+}
+
+label > .label-body {
+  display: inline-block;
+  margin-left: .5rem;
+  font-weight: normal;
+}
+
+input,
+textarea,
+select,
+fieldset {
+  margin-bottom: $form-bottom-spacing;
+}

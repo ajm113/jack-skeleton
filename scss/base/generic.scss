@@ -8,6 +8,13 @@ $body-color: $text !default;
 $body-background-color: $white !default;
 $body-rendering: optimizeLegibility !default;
 
+$link: $light-blue !default;
+$link-hover: $dark-blue !default;
+
+$hr-margin-top: 3rem !default;
+$hr-margin-bottom: 3.5rem !default;
+$hr-border-top: 1px solid $light-grey !default;
+
 html {
   font-size: $html-font-size;
 }
@@ -24,4 +31,52 @@ body {
   -webkit-font-smoothing: antialiased;
   text-size-adjust: 100%;
   text-rendering: $body-rendering;
+}
+
+code {
+  padding: .2rem .5rem;
+  margin: 0 .2rem;
+  font-size: 90%;
+  background: $light-grey;
+  border: 1px solid #E1E1E1;
+  border-radius: $radius;
+
+
+  pre > code {
+    display: block;
+    padding: 1rem 1.5rem;
+    white-space: pre;
+  }
+}
+
+a {
+  color: $link;
+  cursor: pointer;
+
+  &:hover {
+    color: $link-hover;
+  }
+}
+
+hr {
+  margin-top: $hr-margin-top;
+  margin-bottom: $hr-margin-bottom;
+  border-top: $hr-border-top;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: $bottom-spacing-large;
+}
+
+img {
+  height: auto;
+  max-width: 100%;
+}
+
+pre,
+blockquote,
+dl,
+figure {
+  margin-bottom: $bottom-spacing-large;
 }

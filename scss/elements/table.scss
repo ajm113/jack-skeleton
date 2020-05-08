@@ -1,0 +1,22 @@
+$table-cell-padding: 12px 15px !default;
+$table-row-border: 1px solid $light-grey;
+$table-bottom-spacing: $bottom-spacing-large !default;
+
+table {
+  margin-bottom: $table-bottom-spacing;
+
+  th,
+  td {
+    padding: $table-cell-padding;
+    text-align: left;
+    border-bottom: $table-row-border;
+
+    &:first-child {
+      padding-left: 0;
+    }
+
+    &:last-child {
+      padding-right: 0;
+    }
+  }
+}
