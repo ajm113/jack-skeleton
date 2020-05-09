@@ -8,6 +8,7 @@ $form-input-border: 1px solid $light-grey !default;
 $form-input-focus-border: 1px solid $primary !default;
 
 form {
+  width: 100%;
   margin-bottom: $form-bottom-spacing;
 }
 
